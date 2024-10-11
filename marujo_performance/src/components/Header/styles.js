@@ -14,11 +14,39 @@ export const NavBar = styled.nav`
     padding: 2rem 1rem;
     justify-content: space-between;
     align-items: center;
+    background: #fff;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 700px){
         ul{
-            display: none;
+            display: ${props => props.$display};
+            flex-direction: column;
+            position: absolute;
+            gap: 4rem;
+            top: 8.5rem;
+            right: 0rem;
+            width: 100%;
+            height: 100vh;
+            padding: 4rem 1rem;
+            background: #fff;
+            transform: translateY(100);
+            animation: .4s linear 0s ${props => props.$direction};
+            z-index: -10;
+
+            @keyframes fadedIn {
+                0%{
+                    transform: translateY(-100vh);
+                }100%{
+                    transform: translateY(0);
+            }
         }
+        @keyframes fadedout {
+                0%{
+                    transform: translateY(0);
+                    
+                }100%{
+                    transform: translateY(-100vh);
+            }
+
     }
 `;
 
@@ -27,7 +55,7 @@ export const MenuMobile = styled.div`
     font-size: 3rem;
     color: var(--secundary-color-dark);
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 700px){
         display: flex;
     }
 `;
@@ -41,6 +69,7 @@ export const MenuList = styled.ul`
     list-style: none;
     gap: 3rem;
     align-items: center;
+    transition: all .5s ease-in-out;
 `;
 
 export const MenuItem = styled.li`

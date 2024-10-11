@@ -34,5 +34,6 @@ export const GlobalStyles = createGlobalStyle`
 
     body{
         width: 100vw;
+        background: var(--primary-color);
     };
 `;

@@ -8,7 +8,11 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = (e) => {
-        setValue(e.target.href.split('#')[1]);
+        if(e.target.href){
+            setValue(e.target.href.split('#')[1]);
+            return;
+        }
+        setValue('');
     }
 
     const styles = {
@@ -18,12 +22,13 @@ export const Header = () => {
 
     const toggleOpen = () => {
         setIsOpen(!isOpen);
+
     }
 
     return(
         <S.Header>
-            <S.NavBar>
-                <S.ItemLink href='#'>
+            <S.NavBar $display={isOpen ? 'flex' : 'none'} $direction={isOpen ? 'fadedIn' : 'fadedout'}>
+                <S.ItemLink href='#home' onClick={(e) =>handleClick(e) }>
                     <S.BrandNav src={brandNav} />
                 </S.ItemLink>
                 <S.MenuMobile onClick={toggleOpen}>
@@ -33,7 +38,7 @@ export const Header = () => {
                     <S.MenuItem><S.ItemLink href='#service' onClick={(e) =>handleClick(e) } style={value === 'service'?{...styles}:{color:''}}>Serviços</S.ItemLink></S.MenuItem>
                     <S.MenuItem><S.ItemLink href='#useCase' onClick={(e) =>handleClick(e) } style={value === 'useCase'?{...styles}:{color:''}}>Caso de Uso</S.ItemLink></S.MenuItem>
                     <S.MenuItem><S.ItemLink href='#ourMethod' onClick={(e) =>handleClick(e) } style={value === 'ourMethod'?{...styles}:{color:''}}>Nossa Metodologia</S.ItemLink></S.MenuItem>
-                    <S.MenuBtn><S.ItemLink href='#'>Vamos navegar!</S.ItemLink></S.MenuBtn>
+                    <S.MenuBtn><S.ItemLink href='#' >Vamos navegar!</S.ItemLink></S.MenuBtn>
                 </S.MenuList>
             </S.NavBar>
         </S.Header>
