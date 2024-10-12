@@ -1,4 +1,4 @@
-import styled, {} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
     background: var(--text-color0);
@@ -18,34 +18,29 @@ export const NavBar = styled.nav`
 
     @media screen and (max-width: 700px){
         ul{
-            display: ${props => props.$display};
+            /* display: none; */
             flex-direction: column;
             position: absolute;
             gap: 4rem;
-            top: 8.5rem;
+            top: 8.4rem;
             right: 0rem;
             width: 100%;
             height: 100vh;
             padding: 4rem 1rem;
             background: #fff;
-            transform: translateY(100);
-            animation: .4s linear 0s ${props => props.$direction};
+            transform: translateY(-110%);
+            opacity: 0;
+            /* transition: all .5s ease-in-out; */
             z-index: -10;
 
-            @keyframes fadedIn {
-                0%{
-                    transform: translateY(-100vh);
-                }100%{
-                    transform: translateY(0);
-            }
+            ${({ open }) => open && css`
+                /* display: flex; */
+                opacity: 1;
+                transform: translateY(0%);
+
+                `}
+
         }
-        @keyframes fadedout {
-                0%{
-                    transform: translateY(0);
-                    
-                }100%{
-                    transform: translateY(-100vh);
-            }
 
     }
 `;

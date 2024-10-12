@@ -10,9 +10,10 @@ export const Header = () => {
     const handleClick = (e) => {
         if(e.target.href){
             setValue(e.target.href.split('#')[1]);
-            return;
+            setIsOpen(false);
         }
         setValue('');
+        setIsOpen(false);
     }
 
     const styles = {
@@ -22,12 +23,13 @@ export const Header = () => {
 
     const toggleOpen = () => {
         setIsOpen(!isOpen);
+        console.log(isOpen)
 
     }
 
     return(
         <S.Header>
-            <S.NavBar $display={isOpen ? 'flex' : 'none'} $direction={isOpen ? 'fadedIn' : 'fadedout'}>
+            <S.NavBar open={isOpen}>
                 <S.ItemLink href='#home' onClick={(e) =>handleClick(e) }>
                     <S.BrandNav src={brandNav} />
                 </S.ItemLink>
