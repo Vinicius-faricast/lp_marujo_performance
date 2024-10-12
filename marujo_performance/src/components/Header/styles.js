@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
     background: var(--text-color0);
-    width: 100vw;
+    width: 100%;
     position: fixed;
 `;
 

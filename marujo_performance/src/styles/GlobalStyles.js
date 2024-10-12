@@ -33,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        width: 100vw;
-        background: var(--primary-color);
+        width: 100%;
+        /* background: var(--primary-color); */
     };
 `;
