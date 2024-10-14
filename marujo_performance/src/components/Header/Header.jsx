@@ -2,6 +2,7 @@ import * as S from './styles';
 import brandNav from '../../assets/brandNav.svg' 
 import { useState } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
+import { MenuList } from '../MenuList/MenuList';
 
 export const Header = () => {
     const [value, setValue] = useState('')
@@ -11,6 +12,7 @@ export const Header = () => {
         if(e.target.href){
             setValue(e.target.href.split('#')[1]);
             setIsOpen(false);
+            return;
         }
         setValue('');
         setIsOpen(false);
@@ -23,25 +25,24 @@ export const Header = () => {
 
     const toggleOpen = () => {
         setIsOpen(!isOpen);
-        console.log(isOpen)
-
     }
 
     return(
         <S.Header>
-            <S.NavBar open={isOpen}>
-                <S.ItemLink href='#home' onClick={(e) =>handleClick(e) }>
+            <S.NavBar>
+                <S.ItemLink href='#home' onClick={(e) =>handleClick(e)}>
                     <S.BrandNav src={brandNav} />
                 </S.ItemLink>
                 <S.MenuMobile onClick={toggleOpen}>
                     {isOpen ? <IoClose/> : <IoMenu/>}
                 </S.MenuMobile>
-                <S.MenuList>
+                <MenuList isOpen={isOpen} handleClick={handleClick} value={value} styles={styles}/>
+                {/* <S.MenuList open={isOpen}>
                     <S.MenuItem><S.ItemLink href='#service' onClick={(e) =>handleClick(e) } style={value === 'service'?{...styles}:{color:''}}>Serviços</S.ItemLink></S.MenuItem>
                     <S.MenuItem><S.ItemLink href='#useCase' onClick={(e) =>handleClick(e) } style={value === 'useCase'?{...styles}:{color:''}}>Caso de Uso</S.ItemLink></S.MenuItem>
                     <S.MenuItem><S.ItemLink href='#ourMethod' onClick={(e) =>handleClick(e) } style={value === 'ourMethod'?{...styles}:{color:''}}>Nossa Metodologia</S.ItemLink></S.MenuItem>
                     <S.MenuBtn><S.ItemLink href='#' >Vamos navegar!</S.ItemLink></S.MenuBtn>
-                </S.MenuList>
+                </S.MenuList> */}
             </S.NavBar>
         </S.Header>
     )

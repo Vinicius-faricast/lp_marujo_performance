@@ -9,7 +9,7 @@ export const Hero = styled.section`
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         flex-direction: column-reverse;
         align-items: center;
         padding: 10rem 1rem;
@@ -22,7 +22,7 @@ export const HeroContentContainer = styled.div`
     align-items: start;
     gap: 1.5rem;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         align-items: center;
     }
 `;
@@ -31,7 +31,7 @@ export const HeroTitle = styled.h1`
     font-size: 3rem;
     color: var(--text-color100);
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         display: none;
     }
 `;
@@ -40,7 +40,7 @@ export const HeroContent = styled.p`
     color: var(--text-color100);
     font-size: 1.2rem;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         text-align: center;
     }
 `;
@@ -66,7 +66,7 @@ export const HeroBtn = styled.button`
 export const HeroImg = styled.img`
     max-width: 40rem;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         max-width: 100%;
     }    
 `;
@@ -76,7 +76,7 @@ export const HeroTitleMobile = styled.h1`
     color: var(--secundary-color);
     font-size: 2rem;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         display: flex;
     }
 `;
