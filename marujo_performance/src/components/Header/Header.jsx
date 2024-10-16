@@ -35,14 +35,11 @@ export const Header = () => {
                 </S.ItemLink>
                 <S.MenuMobile onClick={toggleOpen}>
                     {isOpen ? <IoClose/> : <IoMenu/>}
+                    {/* aplicar uma condicional para ver quando a resolução a tela diminuir */}
+                    {/* <MenuList isOpen={isOpen} handleClick={handleClick} value={value} styles={styles}/> */}
                 </S.MenuMobile>
+                {/* aplicar a mesma condicional aqui também */}
                 <MenuList isOpen={isOpen} handleClick={handleClick} value={value} styles={styles}/>
-                {/* <S.MenuList open={isOpen}>
-                    <S.MenuItem><S.ItemLink href='#service' onClick={(e) =>handleClick(e) } style={value === 'service'?{...styles}:{color:''}}>Serviços</S.ItemLink></S.MenuItem>
-                    <S.MenuItem><S.ItemLink href='#useCase' onClick={(e) =>handleClick(e) } style={value === 'useCase'?{...styles}:{color:''}}>Caso de Uso</S.ItemLink></S.MenuItem>
-                    <S.MenuItem><S.ItemLink href='#ourMethod' onClick={(e) =>handleClick(e) } style={value === 'ourMethod'?{...styles}:{color:''}}>Nossa Metodologia</S.ItemLink></S.MenuItem>
-                    <S.MenuBtn><S.ItemLink href='#' >Vamos navegar!</S.ItemLink></S.MenuBtn>
-                </S.MenuList> */}
             </S.NavBar>
         </S.Header>
     )

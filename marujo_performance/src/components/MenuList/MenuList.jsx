@@ -3,8 +3,6 @@ import * as S from './styles';
 export const MenuList = (props) => {
     const {isOpen, handleClick, value, styles} = props;
 
-    console.log(props.value)
-
     return(
         <S.MenuList open={isOpen}>
         <S.MenuItem><S.ItemLink href='#service' onClick={(e) =>handleClick(e) } style={value === 'service'?{...styles}:{color:''}}>Serviços</S.ItemLink></S.MenuItem>

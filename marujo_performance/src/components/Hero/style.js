@@ -4,7 +4,7 @@ export const Hero = styled.section`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 10rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@ export const Hero = styled.section`
     @media screen and (max-width:800px) {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 10rem 1rem;
+        padding: 10rem 1rem 5rem 1rem;
     }    
 `;
 
