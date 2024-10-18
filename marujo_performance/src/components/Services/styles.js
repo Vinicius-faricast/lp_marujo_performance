@@ -9,5 +9,17 @@ export const ContainerService = styled.section`
     /* max-height: 100%; */
     max-width: 1024px;
     margin: 0 auto;
-    /* gap: 1rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 `
+
+export const ArticleContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+`;
