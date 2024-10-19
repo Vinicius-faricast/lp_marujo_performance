@@ -4,6 +4,7 @@ export const Header = styled.header`
     background: var(--text-color0);
     width: 100%;
     position: fixed;
+    z-index: 100;
 `;
 
 export const NavBar = styled.nav`
@@ -15,7 +16,6 @@ export const NavBar = styled.nav`
     justify-content: space-between;
     align-items: center;
     background: #fff;
-
 `;
 
 export const MenuMobile = styled.div`

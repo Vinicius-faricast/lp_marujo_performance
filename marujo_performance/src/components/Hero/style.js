@@ -4,7 +4,7 @@ export const Hero = styled.section`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding: 10rem 0 3rem 0;
+    padding: 10rem 1rem 3rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

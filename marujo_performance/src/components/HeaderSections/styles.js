@@ -3,12 +3,15 @@ import { styled} from 'styled-components';
 export const HeaderSectionContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    padding-inline: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
 
     @media screen and (max-width:800px){
         flex-wrap: wrap;
+        justify-content: center;
     }
 `;
 

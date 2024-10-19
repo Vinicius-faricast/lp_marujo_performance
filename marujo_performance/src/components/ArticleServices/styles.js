@@ -15,6 +15,19 @@ export const Article = styled.article`
     &:nth-child(3n + 1){
         background: var(--text-color20);
     }
+
+    @media screen and (max-width: 800px){
+        width: 100%;
+        background: var(--text-color20);
+        &:nth-child(even){
+            background: var(--primary-color-light);
+        }
+
+        /* &:first-child{
+            background: var(--text-color20);
+        } */
+
+    }
 `;
 
 export const ArtcleContainerContent = styled.div`
@@ -22,6 +35,10 @@ export const ArtcleContainerContent = styled.div`
     flex-direction: column;
     gap: .5rem;
     width: 50%;
+
+    @media screen and (max-width: 800px){
+        width: 100%;
+    }
 `;
 
 export const ArticleTitle = styled.h3`
@@ -37,4 +54,8 @@ export const ArticleContent = styled.p`
 export const ArticleImg = styled.img`
     max-width: 16rem;
     width: 50%;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
