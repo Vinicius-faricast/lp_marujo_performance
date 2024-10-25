@@ -5,42 +5,7 @@ export const ArticleCarroussel = styled.div`
     border-radius: 20px;
     padding: 2rem;
     position: relative;
-
-
-    /* &:first-child{
-        border-radius: 20px 0 0 20px;
-        position: relative;
-
-        &::after{
-            content: '';
-            width: 2px;
-            height: 80%;
-            top: 10%;
-            right: 0;
-            border-radius: 10px;
-            background: var(--primary-color-light);
-            position: absolute;
-        }
-
-    } */
-
-    /* &:last-child{
-        border-radius: 0 20px 20px 0;
-        position: relative;
-
-        &::before{
-            content: '';
-            width: 2px;
-            height: 80%;
-            top: 10%;
-            left: 0;
-            border-radius: 10px;
-            background: var(--primary-color-light);
-            position: absolute;
-        }
-
-    } */
-   
+  
     @media screen and (min-width: 800px) {
         border-radius: 0px;
 
