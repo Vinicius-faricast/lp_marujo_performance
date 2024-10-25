@@ -2,7 +2,7 @@ import { HeaderSections } from '../HeaderSections/HeaderSections';
 import * as S from './styles';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y} from 'swiper/modules';
+// import { Navigation, Pagination, Scrollbar, A11y} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -50,11 +50,9 @@ export const UseCase = () => {
         const setCarouselConfig = () => {
             if(window.innerWidth < 800){
                 setIsMobile(true);
-                console.log('é mobile')
                 return;
             }
             setIsMobile(false);
-            console.log('não é mobile')
         }
 
         if(window.innerWidth < 800){
@@ -69,7 +67,7 @@ export const UseCase = () => {
         <S.UseCaseContainer>
             <HeaderSections title='Caso de Estudo'>Veja como nossos projetos podem ajudar no seus negocios</HeaderSections>
 
-            <Swiper style={{'width': '80%'}}
+            <Swiper style={{'width': '100%'}}
                 {...isMobile ? {...configsMobile} : {...configDefault}}
 
             >
