@@ -1,19 +1,24 @@
+import { useState } from 'react'
 import * as S from './style'
-import { IoMdAddCircleOutline } from 'react-icons/io'
+import { IoMdAddCircleOutline, IoMdRemoveCircleOutline } from 'react-icons/io'
 
-export const ArticleMethodology = () => {
-    return(
-        <S.Article>
-            <S.HeaderArticle>
+export const ArticleMethodology = ({number, title, children}) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <S.Article $isOpen={isOpen}>
+            <S.HeaderArticle $isOpen={isOpen}>
                 <S.TitleContainer>
-                <S.NumberArticle>01</S.NumberArticle>
-                <S.TitleArticle>Consulta</S.TitleArticle>
+                    <S.NumberArticle>{number}</S.NumberArticle>
+                    <S.TitleArticle>{title}</S.TitleArticle>
                 </S.TitleContainer>
-                <S.ButtonArticle><IoMdAddCircleOutline /></S.ButtonArticle>
+                <S.ButtonArticle onClick={() => setIsOpen(!isOpen)}>{isOpen ? <IoMdRemoveCircleOutline /> : <IoMdAddCircleOutline />}</S.ButtonArticle>
             </S.HeaderArticle>
-            <S.ContentArticle>
-                text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since the 1500s, when an Lorem Ipsum text of the printing and typesetting industry. Lorem Ipsum has been the s standard dummy text ever since the 1500s, when an Lorem Ipsum text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an Lorem Ipsum 
-            </S.ContentArticle>
+            <S.ContentArticleContainer $isOpen={isOpen}>
+                <S.ContentArticle $isOpen={isOpen}>
+                    {children}
+                </S.ContentArticle>
+            </S.ContentArticleContainer>
         </S.Article>
     )
 }

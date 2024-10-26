@@ -11,10 +11,10 @@ export const MethodologyContainer = styled.div`
 `;
 
 export const MethodologyArticlesContainer = styled.div`
-    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem
+    gap: 2.5rem;
 `
