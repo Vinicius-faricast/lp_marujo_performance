@@ -7,7 +7,7 @@ export const MethodologyContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
 `;
 
 export const MethodologyArticlesContainer = styled.div`
@@ -17,4 +17,5 @@ export const MethodologyArticlesContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+
 `

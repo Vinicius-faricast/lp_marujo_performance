@@ -5,6 +5,7 @@ import { ArticleDivulgation } from "./components/ArticleDivulgation/ArticleDivul
 import sail_boat_cuate from "./assets/sail_boat_cuate.svg"
 import { UseCase } from "./components/UseCase/UseCase";
 import { Methodology } from "./components/Methodology/Methodology";
+import { Footer } from "./components/Footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       </ArticleDivulgation>
       <UseCase/>
       <Methodology />
+      <Footer />
     </>
   )
 }
