@@ -77,11 +77,12 @@ export const BrandNav = styled.img`
 //     }
 // `;
 
-export const ItemLink = styled.a`
+export const ItemLink = styled.div`
     text-decoration: none;
     color: var(--text-color100);
     font-size: .9rem;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 
     &:hover{
         color: var(--primary-color);

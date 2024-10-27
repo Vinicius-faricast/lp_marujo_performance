@@ -64,7 +64,7 @@ export const UseCase = () => {
     }, [isMobile])
 
     return (
-        <S.UseCaseContainer>
+        <S.UseCaseContainer id='#useCase'>
             <HeaderSections title='Caso de Estudo'>Veja como nossos projetos podem ajudar no seus negocios</HeaderSections>
 
             <Swiper style={{'width': '100%'}}

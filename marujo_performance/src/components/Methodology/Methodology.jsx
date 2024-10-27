@@ -37,7 +37,7 @@ export const Methodology = () => {
     ]
 
 return (
-    <S.MethodologyContainer>
+    <S.MethodologyContainer id='#ourMethod'>
         <HeaderSections title='Nossa Metodologia'>
             Guia passo a passo para atingir seus objetivos de negócios
         </HeaderSections>

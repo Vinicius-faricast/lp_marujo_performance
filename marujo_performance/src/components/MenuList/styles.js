@@ -45,16 +45,31 @@ export const MenuItem = styled.li`
     }
 `;
 
-export const ItemLink = styled.a`
+export const ItemLink = styled.p`
+    /* text-decoration: none; */
+    color: var(--text-color100);
+    font-size: .9rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    .active{
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--text-color100);
+    }
+
+    &:hover{
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--text-color100);
+    }
+`;
+
+export const ItemBtn = styled.a`
     text-decoration: none;
     color: var(--text-color100);
     font-size: .9rem;
     transition: all .5s ease-in-out;
-
-    &:hover{
-        color: var(--primary-color);
-    }
-`;
+    cursor: pointer;
+`
 
 export const MenuBtn = styled.button`
     background: none;
