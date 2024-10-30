@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ArticleCase } from '../ArticleCase/ArticleCase';
 import { useEffect, useState } from 'react';
+import { FishsBg } from '../FishsBg/FishsBg';
 
 export const UseCase = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -75,7 +76,7 @@ export const UseCase = () => {
                 <SwiperSlide><ArticleCase></ArticleCase></SwiperSlide>
                 <SwiperSlide><ArticleCase direction={'last'}></ArticleCase></SwiperSlide>
             </Swiper>
-
+        <FishsBg $right={24}/>
         </S.UseCaseContainer>
     )
 }

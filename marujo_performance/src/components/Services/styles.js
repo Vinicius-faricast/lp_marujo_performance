@@ -6,6 +6,7 @@ export const ContainerService = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
 `
 
 export const ArticleContainer = styled.div`

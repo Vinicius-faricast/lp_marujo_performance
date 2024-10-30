@@ -1,4 +1,5 @@
 import { ArticleMethodology } from "../ArticleMethodology/ArticleMethodology";
+import { FishsBg } from "../FishsBg/FishsBg";
 import { HeaderSections } from "../HeaderSections/HeaderSections"
 import * as S from './styles';
 
@@ -51,6 +52,7 @@ return (
             }
 
         </S.MethodologyArticlesContainer>
+        <FishsBg $right={-4}/>
     </S.MethodologyContainer>
 )
 }

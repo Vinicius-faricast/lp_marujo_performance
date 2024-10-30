@@ -4,6 +4,7 @@ import Static_website_cuate from '../../assets/Static_website_cuate.svg';
 import Analysis_cuate from "../../assets/Analysis_cuate.svg";
 import Search_engines_bro from "../../assets/Search_engines_bro.svg";
 import Google_Ads from "../../assets/Google_Ads.svg"
+import { FishsBg } from "../FishsBg/FishsBg";
 import * as S from './styles'
 
 export const Services = () => {
@@ -29,6 +30,7 @@ export const Services = () => {
                     text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
                 </ArticleService>
             </S.ArticleContainer>
+            <FishsBg $right={-4}/>
         </S.ContainerService>
     )
 }

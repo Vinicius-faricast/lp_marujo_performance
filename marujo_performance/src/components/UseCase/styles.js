@@ -7,6 +7,7 @@ export const UseCaseContainer = styled.div`
     gap: 1rem;
     margin: 0 auto;
     padding-block: 3rem;
+    position: relative;
     
 `;
 

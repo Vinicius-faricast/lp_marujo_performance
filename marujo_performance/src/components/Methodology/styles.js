@@ -8,6 +8,11 @@ export const MethodologyContainer = styled.div`
     align-items: center;
     gap: 4rem;
     padding: 1rem 1rem 4rem 1rem;
+    position: relative;
+    /* transform: translateX(100vw); */
+    /* opacity: 0; */
+
+
 `;
 
 export const MethodologyArticlesContainer = styled.div`
