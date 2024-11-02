@@ -20,6 +20,10 @@ export const GlobalStyles = createGlobalStyle`
         
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     *{
         font-family: "Space Grotesk", sans-serif;
         font-optical-sizing: auto;
@@ -29,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        width: 100vw;
-        background: var(--primary-color);
+        width: 100%;
+        /* background: var(--primary-color); */
     };
 `;
