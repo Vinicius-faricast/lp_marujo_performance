@@ -25,6 +25,7 @@ export const BrandFooter = styled.img`
 
 export const DescritionFooter = styled.p`
     font-size: .8rem;
+    font-weight: 500;
     color: var(--text-color0);
 
     @media screen and (max-width: 800px){

@@ -12,7 +12,7 @@ export const ArticleMethodology = ({number, title, children}) => {
                     <S.NumberArticle>{number}</S.NumberArticle>
                     <S.TitleArticle>{title}</S.TitleArticle>
                 </S.TitleContainer>
-                <S.ButtonArticle onClick={() => setIsOpen(!isOpen)}>{isOpen ? <IoMdRemoveCircleOutline /> : <IoMdAddCircleOutline />}</S.ButtonArticle>
+                <S.ButtonArticle aria-label='botão para exibir mais ou menos informações' onClick={() => setIsOpen(!isOpen)}>{isOpen ? <IoMdRemoveCircleOutline /> : <IoMdAddCircleOutline />}</S.ButtonArticle>
             </S.HeaderArticle>
             <S.ContentArticleContainer $isOpen={isOpen}>
                 <S.ContentArticle $isOpen={isOpen}>

@@ -8,11 +8,11 @@ export const Footer = () => {
     return (
         <S.Footer>
             <S.FooterContentContainer>
-                <S.BrandFooter src={BrandFooter}/>
+                <S.BrandFooter src={BrandFooter} alt='Logo empresa marujo performance'/>
                 <S.DescritionFooter>© Marujo Performance 2024. Todos os direitos reservados.</S.DescritionFooter>
                 <S.SocialMediaContainer>
-                    <S.InstaButton><AiFillInstagram/></S.InstaButton>
-                    <S.LinkedinButton><ImLinkedin/></S.LinkedinButton>
+                    <S.InstaButton aria-label='botão para acessar o instagram'><AiFillInstagram/></S.InstaButton>
+                    <S.LinkedinButton aria-label='botão para acessar o linkedin'><ImLinkedin/></S.LinkedinButton>
                 </S.SocialMediaContainer>
             </S.FooterContentContainer>
         </S.Footer>

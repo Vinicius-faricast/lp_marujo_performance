@@ -55,7 +55,9 @@ export const MenuList = (props) => {
             </S.ItemLink>
         </S.MenuItem>
 
-        <S.MenuBtn><S.ItemBtn href='#' target='_blank'>Vamos navegar!</S.ItemBtn></S.MenuBtn>
+        <li>
+            <S.MenuBtn><S.ItemBtn href='#' target='_blank'>Vamos navegar!</S.ItemBtn></S.MenuBtn>
+        </li>
     </S.MenuList>
     )
 }

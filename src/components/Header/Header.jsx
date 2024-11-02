@@ -30,7 +30,7 @@ export const Header = () => {
         <S.Header>
             <S.NavBar>
                     <S.ItemLink onClick={handleClick}>
-                        <S.BrandNav onClick={scrollToTop} id='#home' src={brandNav} />
+                        <S.BrandNav onClick={scrollToTop} id='#home' src={brandNav} alt='Logo empresa marujo performance'/>
                     </S.ItemLink>
                 <S.MenuMobile onClick={toggleOpen}>
                     {isOpen ? <IoClose/> : <IoMenu/>}

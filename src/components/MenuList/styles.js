@@ -67,13 +67,14 @@ export const ItemBtn = styled.a`
     text-decoration: none;
     color: var(--text-color100);
     font-size: .9rem;
+    padding: .8rem 1rem;
     transition: all .5s ease-in-out;
     cursor: pointer;
 `
 
 export const MenuBtn = styled.button`
     background: none;
-    padding: .8rem 1rem;
+    padding: .8rem .1rem;
     border-radius: .5rem;
     border: 1px solid var(--secundary-color-dark);
     cursor: pointer;
