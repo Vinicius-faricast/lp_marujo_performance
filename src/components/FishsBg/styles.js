@@ -7,9 +7,7 @@ export const FishsImg = styled.img`
     bottom: -4rem;
 
     right: ${({...prop}) => prop.$right}rem;
-    /* right: -4rem; */
     animation: moveFish 5s ease-in-out infinite;
-    /* transform: rotatey(180deg); */
 
     @keyframes moveFish {
         0%{
@@ -23,5 +21,10 @@ export const FishsImg = styled.img`
         100%{
             transform: translateX(0%); 
         }
+    }
+
+    @media screen and (max-width:800px){
+        right: 1rem;
+        bottom: -1rem;
     }
 `;

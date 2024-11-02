@@ -3,21 +3,7 @@ import { styled } from "styled-components";
 export const ArticleContainer = styled.div`
     width: 100%;
     padding: 3rem 1rem;
-
-    animation: appearArticleDivulgation 3ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
-
-    @keyframes appearArticleDivulgation {
-        from{
-            opacity: 0;
-            transform: translateX(25%);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }    
+  
 `;
 
 export const Article = styled.article`
@@ -34,6 +20,21 @@ export const Article = styled.article`
     @media screen and (max-width: 700px){
         flex-direction: column-reverse;
     }
+
+    animation: appearArticleDivulgation 3ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+
+    @keyframes appearArticleDivulgation {
+        from{
+            opacity: 0;
+            transform: translateX(15%);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    } 
 `;
 
 export const ArticleContentContainer = styled.div`
