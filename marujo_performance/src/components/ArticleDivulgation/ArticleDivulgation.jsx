@@ -10,7 +10,7 @@ export const ArticleDivulgation = ({title, img, children}) => {
                 <S.ArticleContent>{children}</S.ArticleContent>
                 <S.ArticleButton>Solicite um Orçamento!</S.ArticleButton>
             </S.ArticleContentContainer>
-            <S.ArticleImg src={img} />
+            <S.ArticleImg src={img} alt="ilustração de uma pessoa navegando em um barco a vela"/>
             </S.Article>
         </S.ArticleContainer>
     )

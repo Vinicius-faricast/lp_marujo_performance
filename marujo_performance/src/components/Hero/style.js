@@ -8,28 +8,55 @@ export const Hero = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: .3s linear forwards appear;
+    /* -webkit-animation: .2s appear ease-in-out; */
+
 
     @media screen and (max-width:800px) {
         flex-direction: column-reverse;
         align-items: center;
         padding: 10rem 1rem 5rem 1rem;
-    }    
+    }
+
+    @keyframes appear {
+        from{
+            opacity: 0;
+            transform: translateX(25%);
+            transform-origin: left center;
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 `;
 
 export const HeroContentContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1.5rem;
+    gap: 1rem;
+    /* animation: appear .2s ease-in-out; */
+    /* transition: appear .5s ease-in-out; */
 
     @media screen and (max-width:800px) {
         align-items: center;
+    }
+
+    @keyframes appear {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 `;
 
 export const HeroTitle = styled.h1`
     font-size: 3rem;
     color: var(--text-color100);
+    line-height: 110%;
 
     @media screen and (max-width:800px) {
         display: none;
@@ -65,10 +92,22 @@ export const HeroBtn = styled.button`
 
 export const HeroImg = styled.img`
     max-width: 40rem;
+    transform: scaleX(-1);
 
     @media screen and (max-width:800px) {
         max-width: 100%;
-    }    
+    }
+    
+    @keyframes appear {
+        from{
+            transform: translateX(-10px);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 `;
 
 export const HeroTitleMobile = styled.h1`

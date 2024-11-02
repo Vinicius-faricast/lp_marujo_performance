@@ -26,7 +26,7 @@ export const Hero = () => {
                 <S.HeroContent>Te guiamos pelo caminho mais eficiente para aumentar suas vendas e expandir sua presença online. Com Landing Page de alta performance e campanhas de Google Ads que geram resultados reais!</S.HeroContent>
                 <S.HeroBtn>Vamos Navegar!</S.HeroBtn>
             </S.HeroContentContainer>
-            <S.HeroImg src={fishingAnimate}/>
+            <S.HeroImg src={fishingAnimate} alt='ilustração de um homem pescando dentro de um pequeno barco com uma gaivota ao seu lado'/>
             {isVisible && <S.HeroTitleMobile>Navegando no mar digital para o sucesso!</S.HeroTitleMobile>}
         </S.Hero>
     )

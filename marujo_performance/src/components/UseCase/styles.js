@@ -7,14 +7,27 @@ export const UseCaseContainer = styled.div`
     gap: 1rem;
     margin: 0 auto;
     padding-block: 3rem;
-    position: relative;
+    animation: appearUseCase 3ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+
+    @keyframes appearUseCase{
+        from{
+            opacity: 0;
+            transform: translateY(25%);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     
 `;
 
 export const CarrousselContainer = styled.div`
     width: 80%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hidden; 
 
     @media screen and (max-width: 800px){
         width: 100%;

@@ -14,19 +14,19 @@ export const Services = () => {
                 Em nossos projetos oferecemos uma gama de serviços para ajudar sua empresa a crescer e ter sucesso online. Esses serviços incluem:
             </HeaderSections>
             <S.ArticleContainer>
-                <ArticleService title='Desenvolvimento de Landing Page' image={Static_website_cuate}>
+                <ArticleService title='Desenvolvimento de Landing Page' image={Static_website_cuate} alt='ilustração de uma página web sendo criada'>
                         text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
                 </ArticleService>
 
-                <ArticleService title='Motor de busca otimizado' image={Search_engines_bro}>     
+                <ArticleService title='Motor de busca otimizado' image={Search_engines_bro} alt='ilustração de varias lupas fazendo buscas em um monitor'>     
                     text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
                 </ArticleService>
 
-                <ArticleService title='Análise e Monitorando' image={Analysis_cuate}>
+                <ArticleService title='Análise e Monitorando' image={Analysis_cuate} alt='ilustração de duas pessoas analizando gráficos'>
                     text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
                 </ArticleService>
 
-                <ArticleService title='Google Ads' image={Google_Ads}>
+                <ArticleService title='Google Ads' image={Google_Ads} alt='Imagem do logo do google ads'>
                     text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
                 </ArticleService>
             </S.ArticleContainer>

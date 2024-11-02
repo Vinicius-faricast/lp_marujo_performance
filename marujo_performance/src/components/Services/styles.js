@@ -7,6 +7,20 @@ export const ContainerService = styled.section`
     flex-direction: column;
     gap: 1rem;
     position: relative;
+    animation: appearService 3ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+
+    @keyframes appearService {
+        from{
+            opacity: 0;
+            transform: translateY(-10%);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 `
 
 export const ArticleContainer = styled.div`
