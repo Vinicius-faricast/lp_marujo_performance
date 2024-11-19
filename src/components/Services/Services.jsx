@@ -15,19 +15,19 @@ export const Services = () => {
             </HeaderSections>
             <S.ArticleContainer>
                 <ArticleService title='Desenvolvimento de Landing Page' image={Static_website_cuate} alt='ilustração de uma página web sendo criada'>
-                        text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
+                A landing page é uma página criada com o propósito de converter visitantes em leads ou potenciais clientes, direcionando a uma ação específica.
                 </ArticleService>
 
                 <ArticleService title='Motor de busca otimizado' image={Search_engines_bro} alt='ilustração de varias lupas fazendo buscas em um monitor'>     
-                    text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
+                Um conjunto de estratégias de otimização para mecanismos de busca, que visa alcançar um bom posicionamento da página no Google e em outros buscadores.
                 </ArticleService>
 
                 <ArticleService title='Análise e Monitorando' image={Analysis_cuate} alt='ilustração de duas pessoas analizando gráficos'>
-                    text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
+                Com dados detalhados sobre o tráfego e comportamento dos visitantes, você pode planejar o conteúdo, melhorar a experiência do usuário e otimizar a aparência e navegação na página. 
                 </ArticleService>
 
                 <ArticleService title='Google Ads' image={Google_Ads} alt='Imagem do logo do google ads'>
-                    text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an Lorem Ipsum has been the industry's standard dummy
+                Um bom anúncio deve alcançar as pessoas certas e no melhor momento. Com o Ads, você pode promover seu negócio, produto ou serviço de maneira direcionada, segmentada e também mensurável. 
                 </ArticleService>
             </S.ArticleContainer>
             <FishsBg $right={-4}/>

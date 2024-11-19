@@ -5,9 +5,14 @@ export const ArticleCarroussel = styled.div`
     border-radius: 20px;
     padding: 2rem;
     position: relative;
+    height: 14rem;
+    max-width: 90%;
+    margin: 0 auto;
   
     @media screen and (min-width: 800px) {
         border-radius: 0px;
+        min-height: 16rem;
+        max-width: 100%;
 
         ${({ direction }) => direction === "last" && css`
 

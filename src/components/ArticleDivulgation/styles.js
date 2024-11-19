@@ -83,7 +83,7 @@ export const ArticleButton = styled.button`
 `;
 
 export const ArticleImg = styled.img`
-    max-width: 40%;
+    max-width: 38%;
     position: absolute;
     right: 0;
 

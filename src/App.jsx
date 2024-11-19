@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Hero />
       <Services />
-      <ArticleDivulgation title='Mensagem de efeito!' img={sail_boat_cuate}>
+      <ArticleDivulgation title='Navegando rumo ao sucesso digital!' img={sail_boat_cuate}>
         Entre em contato conosco hoje mesmo para saber mais como nossos projetos podem ajudar sua empresa a crescer e ter sucesso online.
       </ArticleDivulgation>
       <UseCase/>

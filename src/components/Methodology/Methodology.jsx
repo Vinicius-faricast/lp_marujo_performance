@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ArticleMethodology } from "../ArticleMethodology/ArticleMethodology";
 import { FishsBg } from "../FishsBg/FishsBg";
 import { HeaderSections } from "../HeaderSections/HeaderSections"
@@ -37,6 +38,7 @@ export const Methodology = () => {
         },
     ]
 
+    const [idItem, setIdItem] = useState(null);
 return (
     <S.MethodologyContainer id='#ourMethod'>
         <HeaderSections title='Nossa Metodologia'>
@@ -46,7 +48,7 @@ return (
         <S.MethodologyArticlesContainer>
             {
                 ItensMethodology.map(({number, title, content}) =>(
-                    <ArticleMethodology key={number} number={number} title={title}>{content}</ArticleMethodology>
+                    <ArticleMethodology setIdItem={setIdItem} idItem={idItem} key={number} number={number} title={title}>{content}</ArticleMethodology>
                 ))
                     
             }

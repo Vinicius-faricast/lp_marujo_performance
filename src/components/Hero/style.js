@@ -95,7 +95,7 @@ export const HeroImg = styled.img`
     max-width: 40rem;
     transform: scaleX(-1);
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:1024px) {
         max-width: 100%;
     }
     
